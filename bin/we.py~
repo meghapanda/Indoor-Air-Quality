@@ -1,0 +1,19 @@
+import web
+import requests
+
+urls = (
+  '/', 'index'
+)
+
+app = web.application(urls, globals())
+
+class index:
+    def GET(self):
+        a=requests.get('https://api.thingspeak.com/channels/31959/feeds.json')
+
+	print "a"
+	return a.json()
+	
+
+if __name__ == "__main__":
+    app.run()

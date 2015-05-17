@@ -1,0 +1,84 @@
+$def with (co_min,co_avg,co_max,nh3_min,nh3_avg,nh3_max,no_min,no_avg,no_max,dp_min,dp_avg,dp_max,so2_min,so2_avg,so2_max,co,nh3,no2,dp,so2)
+<html>
+<head>
+<title>Data Analysed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script type="text/javascript">
+        if($co==1)
+                {document.getElementById("co").innerHTML="No Significant Change";}
+        if($nh3==1)
+                {document.getElementById("co").innerHTML="No Significant Change";}
+        if($no2==1)
+                {document.getElementById("co").innerHTML="No Significant Change";}
+        if($dp==1)
+                {document.getElementById("co").innerHTML="No Significant Change";}
+        if($so2==1)
+                {document.getElementById("co").innerHTML="No Significant Change";}
+</script>
+</head>
+<body>
+<h1>Air Quality Monitoring System</h1><hr>
+
+<div class="center-block col-md-8">
+<table class="table table-hover table-condensed table-responsive">
+<tr>
+	<td class=" btn-default">Sensor</td>
+        <td class=" btn-success">Minimum</td>
+        <td class=" btn-info">Average</td>
+        <td class=" btn-warning">Maximum</td>
+	<td class=" btn-danger">Acepted Upper limit</td>
+        <td class=" btn-primary" >Analysis</td>
+</tr>
+
+	 <td class=" btn-default">Carbon Monoxide</td>
+         <td class=" btn-success">$co_min</td>
+         <td class=" btn-info">$co_avg</td>
+         <td class=" btn-warning">$co_max</td>
+	 <td class=" btn-danger">Excepted Upper limit</td>
+         <td class=" btn-primary" id="co">Significant Changes</td>
+</tr>
+<tr>
+	 <td class=" btn-default">Ammonia</td>
+         <td class=" btn-success">$nh3_min</td>
+         <td class=" btn-info">$nh3_avg</td>
+         <td class=" btn-warning">$nh3_max</td>
+	 <td class=" btn-danger">Excepted Upper limit</td>
+         <td class=" btn-primary" id="nh3">Significant Changes</td>
+</tr>
+<tr>
+
+	 <td class=" btn-default">Nitrogen Oxide</td>
+         <td class=" btn-success">$no_min</td>
+         <td class=" btn-info">$no_avg</td>
+         <td class=" btn-warning">$no_max</td>
+	 <td class=" btn-danger">Excepted Upper limit</td>
+         <td class=" btn-primary" id="no2">Significant Changes</td>
+
+</tr>
+<tr>
+	 <td class=" btn-default">Dust Particle</td>
+         <td class=" btn-success">$dp_min</td>
+         <td class=" btn-info">$dp_avg</td>
+         <td class=" btn-warning">$dp_max</td>
+	 <td class=" btn-danger">Excepted Upper limit</td>
+         <td class=" btn-primary" id="dp">Significant Changes</td>
+</tr>
+<tr>
+	<td class=" btn-default">Sulphur Dioxide</td>
+        <td class=" btn-success">$so2_min</td>
+        <td class=" btn-info">$so2_avg</td>
+        <td class=" btn-warning">$so2_max</td>
+	<td class=" btn-danger">Excepted Upper limit</td>
+         <td class=" btn-primary" id="dp">Significant Changes</td>
+</tr>
+        
+</div>
+<div>
+<!-- <img src="/disp.jpeg" class="img-responsive" alt="Data Plot"> -->
+</div>
+<div>
+co,nh3,no2,dp,so2
+</div>
+</body>
+</html>
